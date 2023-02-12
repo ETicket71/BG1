@@ -204,7 +204,7 @@ export default function BookExperience({
           <div />
         ) : prebooking ? (
           <Prebooking
-            startTime={experience.flex.enrollmentStartTime || '01:00:00'}
+            startTime={experience.flex.enrollmentStartTime}
             onRefresh={checkAvailability}
           />
         ) : offer === null ? (
